@@ -4,8 +4,16 @@ The purpose of this application is to capture data of employees and students thr
 
 ## Root/Sign in Page
 
-You will be required to have a sign in. Your sign in will be coordinated with your TIY login. For example, nick@theironyard.com will be able to sign in to this site. Somerandomdude@theironyard.com will not unless given permission.
+You will be required to have a sign in. You will have the options to register with your Google accounts, github accounts, or register plain with the site.
 
+For example:
+
+		I am an unregistered user
+		I visit the site and click "Request Access"
+		It will link me to the registration page where you can sign in with your Google emails, Github Emails, or register a new account
+		I will be presented with a basic account screen where I can edit my credentials and/or request access to certain portions of the site
+		An email will be sent to the administrators that "So and so" is requesting access to "so and so" module
+		
 As this is open sourced, I imagine a use case where investors may want to check students progress and what-not. So, there will be a "Request Permission" button on the sign in. When clicked it will open a dialog where the person will enter their names and email. Once submitted, an email will be sent to the administration user.
 
 ## User Roles
@@ -22,9 +30,17 @@ For example, students will have Names, Address, City, State, Zip. The user will 
 
 ## Navigation Bar/Side bar/General styling?
 
-- Not sure. We should discuss
+- Employees
+- Students
+- Admin
 
 ## Home Page
 
+When signing into the application, you should be greeted with a list of current employees. All of the information that you have access to should be displayed.
 
+## Students Page
 
+When clicking the "Students" tab, you will be greeted with a list of students. You can filter by status of the students as well.
+
+- Current
+- Alumni
