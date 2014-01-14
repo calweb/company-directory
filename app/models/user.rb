@@ -9,4 +9,6 @@ class User < ActiveRecord::Base
           :validatable,
           :confirmable
           :timeoutable
+
+  USER_TYPES = ['Employee', 'Student']
 end
