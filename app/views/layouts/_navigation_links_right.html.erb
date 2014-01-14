@@ -1,0 +1,7 @@
+<%- if user_signed_in? %>
+  <li><%= link_to t(:log_edit), edit_user_registration_path %></li>
+  <li><%= link_to t(:log_out), destroy_user_session_path, method: :delete %></a></li>
+<%- else %>
+  <li><%= link_to t(:log_in), new_user_session_path %></li>
+  <li><%= link_to t(:register), new_user_registration_path %></a></li>
+<%- end %>

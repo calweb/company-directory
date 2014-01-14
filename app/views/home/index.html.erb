@@ -1,0 +1,12 @@
+<!-- Main component for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <h1><%= t(:title) %></h1>
+  <p><%= t(:description) %></p>
+  <p>
+    <%= link_to t(:register), new_user_registration_path, class: "btn btn-lg btn-primary", role: "button" %>
+  </p>
+</div>
+<div>
+  <h3><%= t('open_source.title') %></h3>
+  <%= link_to t('open_source.github.title'), t('open_source.github.link') %>
+</div>
