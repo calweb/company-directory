@@ -53,3 +53,4 @@ gem 'devise'
 gem 'quiet_assets'
 gem 'letter_opener', group: :development
 gem 'rails_admin'
+gem 'cancan'

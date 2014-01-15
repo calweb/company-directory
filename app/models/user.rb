@@ -11,4 +11,8 @@ class User < ActiveRecord::Base
           :timeoutable
 
   USER_TYPES = ['Employee', 'Student']
+
+  def is_admin?
+    admin ? admin : false
+  end
 end
