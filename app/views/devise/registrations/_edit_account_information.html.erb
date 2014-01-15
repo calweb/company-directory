@@ -39,7 +39,9 @@
       <%= f.password_field :current_password, class: 'form-control' %>
     </div>
   </fieldset>
-  <%= f.submit 'Update', :class => 'btn btn-primary' %>
+  <%= f.submit t(:update), :class => 'btn btn-primary' %>
+  |
+  <%= link_to t(:cancel), root_path %>
 <% end %>
 <h3>Cancel Account</h3>
 <p>Unhappy? We'll be sad to see you go.</p>

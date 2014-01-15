@@ -1,12 +1,47 @@
 <!-- Main component for a primary marketing message or call to action -->
-<div class="jumbotron">
-  <h1><%= t(:title) %></h1>
-  <p><%= t(:description) %></p>
-  <p>
-    <%= link_to t(:register), new_user_registration_path, class: "btn btn-lg btn-primary", role: "button" %>
-  </p>
-</div>
-<div>
-  <h3><%= t('open_source.title') %></h3>
-  <%= link_to t('open_source.github.title'), t('open_source.github.link') %>
-</div>
+<%- if current_user %>
+  <div class="jumbotron">
+    <h1>YOU IS A USER. <br>YOU IS LOGGED IN.</h1>
+  </div>
+  <ul>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+
+  </ul>
+
+<%- else %>
+  <div class="jumbotron">
+    <h1><%= t(:title) %></h1>
+    <p><%= t(:description) %></p>
+    <p>
+      <%= link_to t(:register), new_user_registration_path, class: "btn btn-lg btn-primary", role: "button" %>
+    </p>
+  </div>
+  <div>
+    <h3><%= t('open_source.title') %></h3>
+    <%= link_to t('open_source.github.title'), t('open_source.github.link') %>
+  </div>
+<%- end %>
+

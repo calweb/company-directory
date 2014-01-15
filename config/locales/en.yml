@@ -25,6 +25,8 @@ en:
   log_in: "Log In"
   log_out: "Log Out"
   edit: "Edit"
+  update: "Update"
+  cancel: "Cancel"
   title: "Company Directory"
   description: "This application will keep employee and student data in one place. It's really hard keeping track of everyone so this alleviates that issue."
   navbar:
