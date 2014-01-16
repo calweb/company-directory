@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
           :rememberable,
           :trackable,
           :validatable,
-          :confirmable
+          # :confirmable
           :timeoutable
 
   USER_TYPES = ['Employee', 'Student']

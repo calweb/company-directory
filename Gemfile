@@ -46,10 +46,10 @@ end
 # gem 'debugger', group: [:development, :test]
 group :development do
   gem 'rails_layout'
+  gem 'letter_opener'
 end
 
 gem 'devise'
 gem 'quiet_assets'
-gem 'letter_opener', group: :development
 gem 'rails_admin'
 gem 'cancan'
