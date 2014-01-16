@@ -33,6 +33,7 @@ RailsAdmin.config do |config|
   # Include specific models (exclude the others):
   config.included_models = ['User', 
                             'Employee',
+                            'Student',
                             'Role',
                             'AccessibleEntity']
 
