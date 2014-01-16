@@ -1,4 +1,7 @@
 <%- if user_signed_in? %>
+  <%- if current_user.is_admin? -%>
+    <li><%= link_to t(:admin_text), rails_admin_path %></li>
+  <%- end %>
   <li><%= link_to t(:edit), edit_user_registration_path %></li>
   <li><%= link_to t(:log_out), destroy_user_session_path, method: :delete %></a></li>
 <%- else %>

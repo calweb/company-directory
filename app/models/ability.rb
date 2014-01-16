@@ -7,5 +7,6 @@ class Ability
     end
     can :dashboard              # grant access to the dashboard
     can :read, :all
+    can :manage, :all
   end
 end

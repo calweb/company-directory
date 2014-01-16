@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 20140116032518) do
 
   create_table "role_accessible_entities", force: true do |t|
     t.integer  "role_id"
-    t.integer  "entity_id"
+    t.integer  "accessible_entity_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

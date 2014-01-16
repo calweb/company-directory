@@ -67,5 +67,9 @@ RailsAdmin.config do |config|
     field :admin
   end
 
+  config.model "AccessibleEntity" do
+    field :name
+  end
+
 
 end
