@@ -32,7 +32,9 @@ RailsAdmin.config do |config|
 
   # Include specific models (exclude the others):
   config.included_models = ['User', 
-                            'Employee']
+                            'Employee',
+                            'Role',
+                            'AccessibleEntity']
 
   # Label methods for model instances:
   # config.label_methods << :description # Default is [:name, :title]
