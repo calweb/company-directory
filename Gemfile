@@ -48,7 +48,6 @@ group :development do
   gem 'rails_layout'
 end
 
-gem 'bootstrap-sass'
 gem 'devise'
 gem 'quiet_assets'
 gem 'letter_opener', group: :development
